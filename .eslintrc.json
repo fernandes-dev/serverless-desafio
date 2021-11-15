@@ -20,6 +20,7 @@
     "eslint-plugin-import-helpers"
   ],
   "rules": {
+    "import/no-import-module-exports": "off",
     "prettier/prettier": "error",
     "camelcase": "off",
     "import/no-unresolved": "error",

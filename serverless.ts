@@ -1,4 +1,5 @@
 import createTodo from '@functions/todos/create'
+import showTodo from '@functions/todos/show'
 import type { AWS } from '@serverless/typescript'
 
 const serverlessConfiguration: AWS = {
@@ -23,7 +24,7 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
-  functions: { createTodo },
+  functions: { createTodo, showTodo },
   package: { individually: true },
   custom: {
     esbuild: {
